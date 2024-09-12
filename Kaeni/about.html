@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaeni Cosmetics | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General button animations */
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4081;
+            transform: scale(1.1);
+        }
+
+        /* Hero section animations */
+        .hero-container {
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+        }
+
+        .hero-container:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+
+        /* Mission card animations */
+        .mission-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Consistent styling for mission cards */
+        .mission-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .mission-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Styling for hero image */
+        .hero-img-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Section headers */
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .para-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero-para1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .hero-para2 {
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="head-container">
+        <div class="logo">
+            <p>KAENI COSMETICS</p>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="studio.html">Our Studio</a></li>
+                    <li><a href="about.html"><strong>About</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="head-btn">
+            <button id="log-btn">Log In</button>
+            <button id="sign-btn">Sign Up</button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-container">
+    <div>
+        <p class="hero-para1">Our Journey</p>
+        <P class="hero-para2">Kaeni Cosmetics began with a simple idea: to empower beauty enthusiasts and professionals with high-quality products and innovative solutions that inspire creativity.</P>
+
+        <div class="herodiv3"> 
+            <!-- Empty for now, but can include a button or more content later -->
+        </div>
+    </div>
+
+   
+</section>
+
+<!-- Our Story Section -->
+<div class="para-section">
+    <div>
+        <h1>About Kaeni Cosmetics</h1>
+        <p>Founded with a passion for beauty and a desire to create a lasting impact, Kaeni Cosmetics has grown into a trusted name in the world of makeup and skincare. From humble beginnings to becoming a leader in innovation, we’ve stayed true to our commitment: delivering quality products that inspire confidence, creativity, and individuality.</p>
+    </div>
+</div>
+
+<!-- Mission, Vision, and Values Section -->
+<div class="mission-container">
+    <div class="mission-card">
+        <h4>Our Mission</h4>
+        <p>To inspire confidence and creativity through high-quality makeup products, empowering individuals to express their beauty in their own unique way.</p>
+    </div>
+
+    <div class="mission-card">
+        <h4>Our Vision</h4>
+        <p>To become a global leader in the beauty industry by offering innovative, eco-conscious, and cruelty-free products, while fostering an inclusive and supportive community.</p>
+    </div>
+
+    <div class="mission-card">
+        <h4>Our Values</h4>
+        <p><strong>Inclusivity:</strong> We believe beauty is for everyone.<br/>
+           <strong>Innovation:</strong> Constantly pushing boundaries in beauty.<br/>
+           <strong>Sustainability:</strong> Committed to eco-friendly practices.<br/>
+           <strong>Quality:</strong> Never compromising on excellence.</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <center><p>Disclaimer! In case of any reaction on skin stop usage immediately!</p></center>
+    </div>
+</footer>
+
+<script>
+    // Fade-in effect for hero section on page load
+    window.onload = function() {
+        document.querySelector('.hero-container').style.opacity = 0;
+        setTimeout(function() {
+            document.querySelector('.hero-container').style.opacity = 1;
+        }, 500);
+    };
+
+    // Button click animation for the sign-up and login buttons
+    document.getElementById('log-btn').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => this.style.transform = 'scale(1)', 200);
+    });
+
+    document.getElementById('sign-btn').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => this.style.transform = 'scale(1)', 200);
+    });
+</script>
+
+</body>
+</html>

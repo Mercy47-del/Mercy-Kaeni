@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaeni Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add transition to buttons */
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Animation for button hover */
+        button:hover {
+            background-color: #ff4081;
+            transform: scale(1.1);
+        }
+
+        /* Transition for hero section */
+        .hero-container {
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+        }
+
+        .hero-container:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+
+        /* Add animations to card section */
+        .card-section-div1, .card-section-div2, .card-section-div3, .card-section-div4 {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .card-section-div1:hover, .card-section-div2:hover, .card-section-div3:hover, .card-section-div4:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Small card hover effects */
+        .sc-div1, .sc-div2, .sc-div3, .sc-div4, .sc-div5, .sc-div6 {
+            transition: transform 0.3s ease;
+        }
+
+        .sc-div1:hover, .sc-div2:hover, .sc-div3:hover, .sc-div4:hover, .sc-div5:hover, .sc-div6:hover {
+            transform: rotate(5deg);
+        }
+        
+        /* Animation for the statistics section */
+        .stat-box {
+            transition: transform 0.5s ease-in-out, color 0.5s ease;
+        }
+
+        .stat-box:hover {
+            transform: scale(1.1);
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="head-container">
+        <div class="logo">
+            <p>KAENI<br> COSMETICS</p>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul class="list">
+                    <li><a href="home.html"><strong>Home</strong></a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="studio.html">Our Studio</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="head-btn">
+            <button id="log-btn">Log In</button>
+            <button id="sign-btn">Sign Up</button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero section -->
+<section class="hero-container">
+    <div>
+        <p class="hero-para1">Discover Your Perfect Look<br/> with Kaeni Cosmetics</p>
+        <P class="hero-para2">We specialize in makeup for every skin tone and occasion. <br/> 
+           Our professional artists and top-quality products <br/>
+           ensure you shine your brightest. Join us today!
+        </P>
+
+        <div class="herodiv2">
+            <input type="text" class="input-area" placeholder="Your Email">
+            <button class="signup-button">Sign Up</button> 
+        </div>
+
+        <div class="herodiv3">
+            <button>Book a Makeup Session</button>
+        </div> 
+    </div>
+
+    <div class="hero-img-container">
+         <img src="kylie.jpg" class="img-fluid" alt="Makeup Session"> 
+    </div> 
+ </section>
+
+<!-- Statistics section -->
+<div class="stats-container">
+    <div class="stat-box">
+        <h2>98%</h2>
+        <p>Customer Satisfaction</p>
+    </div>
+    <div class="stat-box">
+        <h2>2,000+</h2>
+        <p>Happy Clients</p>
+    </div>
+    <div class="stat-box">
+        <h2>5,000+</h2>
+        <p>Makeup Sessions Completed</p>
+    </div>
+    <div class="stat-box">
+        <h2>100%</h2>
+        <p>Vegan & Cruelty-Free Products</p>
+    </div>
+</div>
+
+<!-- Services section -->
+<div class="para-section">
+    <div>
+        <h1>Our Best Makeup Services</h1>
+    </div>
+</div>
+
+<!-- Card section -->
+<div class="card-container">
+    <div class="card-section-div1">
+        <div>
+            <img class="card-imgdiv1" src="bridal image.jfif" alt="bridal makeup">
+            <h4>Bridal Makeup</h4>
+            <h5>Let our artists create the perfect look for your special day.</h5>
+        </div>
+    </div>
+
+    <div class="card-section-div2">
+        <div>
+            <img class="card-img-div2" src="everyday makeup.jpg" alt="everyday glam">
+            <h4>Everyday Glam</h4>
+            <h5>Get the perfect look for your daily routine or a night out.</h5>
+        </div>
+    </div>
+
+    <div class="card-section-div3">
+        <div>
+            <img class="card-img-div3" src="make up lessons.jpg" alt="makeup lessons">
+            <h4>Makeup Lessons</h4>
+            <h5>Join our classes and learn from top makeup artists.</h5>
+        </div>
+    </div>
+
+    <div class="card-section-div4">
+        <div>
+            <img class="card-img-div4" src="make up.jpg" alt="make up">
+            <h4>Makeup Kits</h4>
+            <h5>Order our exclusive makeup kits tailored for your skin tone.</h5>
+        </div>
+    </div>
+</div>
+
+<!-- Small card section -->
+<div class="small-card-container">
+    <div class="sc-div1">
+        <img src="circle.png" alt="">
+        <h4>Lip Care</h4>
+    </div>
+
+    <div class="sc-div2">
+        <img src="circle.png" alt="">
+        <h4>Eye Shadow</h4>
+    </div>
+
+    <div class="sc-div3">
+        <img src="circle.png" alt="">
+        <h4>Foundation</h4>
+    </div>
+
+    <div class="sc-div4">
+        <img src="circle.png" alt="">
+        <h4>Highlighter</h4>
+    </div>
+
+    <div class="sc-div5">
+        <img src="circle.png" alt="">
+        <h4>Blush</h4>
+    </div>
+
+    <div class="sc-div6">
+        <img src="circle.png" alt="">
+        <h4>Setting Spray</h4>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+       <center><p>Disclaimer ! In case of any reaction on skin stop usage immediately!</p></center>
+    </div>
+</footer>
+
+<script>
+    // Fade-in effect for hero section on page load
+    window.onload = function() {
+        document.querySelector('.hero-container').style.opacity = 0;
+        setTimeout(function() {
+            document.querySelector('.hero-container').style.opacity = 1;
+        }, 500);
+    };
+
+    // Button click animation for the sign-up and login buttons
+    document.getElementById('log-btn').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => this.style.transform = 'scale(1)', 200);
+    });
+
+    document.getElementById('sign-btn').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => this.style.transform = 'scale(1)', 200);
+    });
+</script>
+
+</body>
+</html>

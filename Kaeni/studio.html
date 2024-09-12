@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaeni Cosmetics | Our Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General button animations */
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff4081;
+            transform: scale(1.1);
+        }
+
+        /* Hero section animations */
+        .hero-container {
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+        }
+
+        .hero-container:hover {
+            transform: scale(1.02);
+            opacity: 0.95;
+        }
+
+        /* Service card animations */
+        .service-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Consistent styling for the services grid */
+        .services-grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Styling for hero image */
+        .hero-img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Styling for section headers */
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .para-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero-para1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .hero-para2 {
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="head-container">
+        <div class="logo">
+            <p>KAENI COSMETICS</p>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul class="list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="studio.html"><strong>Our Studio</strong></a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="head-btn">
+            <button id="log-btn">Log In</button>
+            <button id="sign-btn">Sign Up</button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-container">
+    <div>
+        <p class="hero-para1">Step Into Our World of Beauty</p>
+        <P class="hero-para2">Welcome to the Kaeni Studio - where magic happens, creativity flows, and beauty comes to life.<br/>
+            Explore the heart of our brand and the space where your dream look is crafted.
+        </P>
+
+        <div class="herodiv3">
+            <button>Book a Visit</button>
+        </div>
+    </div>
+
+    <div class="hero-img-container">
+        <img src="studio shop.jpg" class="img-fluid" alt="Kaeni Studio">
+    </div>
+</section>
+
+<!-- Studio Overview Section -->
+<div class="para-section">
+    <div>
+        <h1>Our Studio Experience</h1>
+        <p>Located in the heart of the city, the Kaeni Studio is a space where beauty meets inspiration. Whether you're here for a makeup session, a workshop, or to collaborate on a creative project, we offer a welcoming environment designed for comfort and creativity.</p>
+    </div>
+</div>
+
+<!-- Studio Services Section -->
+<div class="services-section">
+    <div class="para-section">
+        <h1>What We Offer</h1>
+    </div>
+
+    <div class="services-grid-container">
+        <div class="service-card">
+            <h4>Makeup Sessions</h4>
+            <p>Whether it's for a special occasion or everyday glam, our professional makeup artists are here to create the perfect look for you.</p>
+        </div>
+
+        <div class="service-card">
+            <h4>Workshops & Classes</h4>
+            <p>Join our expert-led makeup workshops to learn tips, techniques, and the latest trends in the beauty industry.</p>
+        </div>
+
+        <div class="service-card">
+            <h4>Collaborations & Photoshoots</h4>
+            <p>Our studio is the ideal space for collaborations and professional photoshoots, offering the perfect setting for your creative projects.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer">
+        <center><p>Disclaimer! In case of any reaction on skin stop usage immediately!</p></center>
+    </div>
+</footer>
+
+<script>
+    // Fade-in effect for hero section on page load
+    window.onload = function() {
+        document.querySelector('.hero-container').style.opacity = 0;
+        setTimeout(function() {
+            document.querySelector('.hero-container').style.opacity = 1;
+        }, 500);
+    };
+
+    // Button click animation for the sign-up and login buttons
+    document.getElementById('log-btn').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => this.style.transform = 'scale(1)', 200);
+    });
+
+    document.getElementById('sign-btn').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        setTimeout(() => this.style.transform = 'scale(1)', 200);
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+body {
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    background-color: pink;
+    /* border: 1px solid black; */
+}
+
+/* Header section */
+.head-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 25px;
+    color: rgb(206, 20, 20);
+    background-color: black;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
+.list a {
+    text-decoration: none;
+    margin: 15px;
+    color: white;
+}
+
+.head-btn {
+    display: flex;
+    margin: 5px;
+}
+
+#log-btn {
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+#sign-btn {
+    background-color:palevioletred;
+    color: white;
+}
+
+button {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Hero section */
+.hero-container {
+    display: flex;
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+    justify-content: space-around;
+}
+
+.hero-para1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-para2 {
+    padding-bottom: 20px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-area {
+    border: 1px solid;
+    padding: 11px;
+    margin-right: -4px;
+}
+
+.signup-button {
+    padding: 11px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#herobutton {
+    background-color: grey;
+    border-radius: 95px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.herodiv3 {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.hero-text {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Statistics section */
+.stats-container {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin: 30px auto;
+    justify-content: space-around;
+    background-color: black;
+    padding: 30px;
+}
+
+.stat-box {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.stat-box h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.stat-box p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    border-top: 1px solid gray;
+    padding-top: 5px;
+}
+
+/* Paragraph section */
+.para-section {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+}
+
+/* Card section */
+.card-container {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+    justify-content: center;
+}
+
+.card-section-div1, .card-section-div2, .card-section-div3, .card-section-div4 {
+    background-color: lightgray;
+    text-align: center;
+    display: flex;
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 15rem;
+    height: 15rem;
+    padding: 10px;
+    justify-content: center;
+    border: none;
+}
+
+/* Small card section */
+.small-card-container {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+    justify-content: center;
+}
+
+.sc-div1, .sc-div2, .sc-div3, .sc-div4, .sc-div5, .sc-div6 {
+    border: 1px solid black;
+    margin: 20px auto;
+    background-color: lightgray;
+    width: 10rem;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Second Paragraph section */
+.second-para-section {
+    display: flex;
+    text-align: left;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+}
+
+/* Specialists section */
+.specialist-container {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+    justify-content: center;
+}
+
+.para2-div {
+    /* border: 1px solid black; */
+    background-color: lightgray;
+    margin: 10px auto;
+    width: 10rem;
+    height: auto;
+    text-align: center;
+}
+
+/* Third Paragraph section */
+.third-para-section {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+}
+
+/* Doctor cards section */
+.doctor-card-container {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 80%;
+    height: auto;
+    margin: 60px auto;
+}
+
+.doctor-card-div1, .doctor-card-div2, .doctor-card-div3, .doctor-card-div4 {
+    display: flex;
+    /* border: 1px solid black; */
+    background-color: darkgray;
+    width: 15rem;
+    height: 15rem;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Fourth Paragraph section */
+.fourth-para-section {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin: 60px auto;
+    width: 80%;
+}
+
+/* Ensure images fit well in their containers */
+.img-fluid,
+.card-section-div1 img,
+.card-section-div2 img,
+.card-section-div3 img,
+.card-section-div4 img,
+.sc-div1 img,
+.sc-div2 img,
+.sc-div3 img,
+.sc-div4 img,
+.sc-div5 img,
+.sc-div6 img,
+.specialist-container img,
+.doctor-card-div1 img,
+.doctor-card-div2 img,
+.doctor-card-div3 img,
+.doctor-card-div4 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+/* Style for product images to make them smaller */
+.product-card img {
+    width: 150px; /* Adjust the size to your preference */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits well */
+    display: block;
+    margin: 0 auto; /* Center the image within the product card */
+}
+
+/* Additional CSS for product cards */
+.product-card {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    width: 200px; /* Adjust the card width to match the smaller images */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.products-grid-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
